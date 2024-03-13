@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_1</title>
+</head>
+<body>
+    <script>
+        function palindrome (){
+            let word = prompt('Введіть слово для перевірки');
+            let arrUser = word.split("");
+            let arrPalindrom = arrUser.slice();
+            arrPalindrom = arrPalindrom.reverse();
+            for(let i=0; i<arrUser.length; i++){
+                if(arrUser[i] != arrPalindrom[i]){
+                    alert("Введенний текст не є паліндром");
+                    return;
+                }else{
+                    alert(`Вітаю, ${word} є паліандром!`);
+                    return;
+                }
+            }
+        }
+        palindrome();
+    </script>
+</body>
+</html>

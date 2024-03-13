@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task_2</title>
+</head>
+
+<body>
+    <script>
+        function anagram() {
+            let firstWord = prompt('введіть перше слово');
+            let secondWord = prompt('введіть друге слово');
+            let firstWordSorted = firstWord.toLowerCase().split('').sort().join('');
+            let secondWordSorted = secondWord.toLowerCase().split('').sort().join('');
+
+            console.log(firstWordSorted);
+            console.log(secondWordSorted);
+
+            if (firstWordSorted === secondWordSorted) {
+                alert(`Вітаю введені слова ${firstWord} i ${secondWord} є анограмою!`);
+                return;
+            } else {
+                alert(`Введені слова ${firstWord} i ${secondWord} не є анограмою!`);
+                return;
+            }
+        }
+
+        anagram();
+    </script>
+</body>
+
+</html>
